@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complementos - Sándalo</title>
+    <meta name="description" content="pagina web oficial para Sándalo">
+    <meta name="keywords" content="cafe cafeteria curadores tazas">
+    <meta name="author" content="Nicolle Rodriguez">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" href="img/faticon.png">
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/java.js"></script>
+</head>
+
+<body id="inicio">
+    <nav class="menu menucolor">
+        <a href="#" id="bag"><img src="img/icons/icon_bolsa_compras.svg" alt="ver bolsa de compras"></a>
+
+        <div class="center flexbox">
+            <a href="index.html"><img src="img/icons/sandalo_white.svg" alt="logo de la empresa" class="logo"></a>
+
+            <ul class="flexbox">
+                <li> <a href="index.html">HOME</a></li>
+                <li> 
+                    <a href="#" class="activo">TIENDA</a>
+                        <ul>
+                            <li> <a href="#" class="flexbox">Cafés</a></li>
+                            <li> <a href="#" class="flexbox">Infusiones</a> </li>
+                            <li> <a href="tienda_web.html" class="flexbox">Complementos</a> </li>
+                        </ul>                
+                </li>
+                <li> <a href="#footer">CONTACTO</a> </li>
+            </ul>
+        </div>    
+    </nav>        
+
+    <div id="cookies" class="flexbox">
+        <h3>Uso de cookies</h3>
+        <p>Este sitio web utiliza cookies para garantizar una mejor experiencia. Puedes encontrar los detalles en nuestra política de privacidad.</p>
+        <a href="#">ver políticas</a>
+        <a href="#" class="button2">acepto</a>
+    </div>
+
+       
+    <main>
+        <section id="S03">
+
+            <nav id="breadcrumb" class="flexbox center">
+                <a href="#">Tienda</a>
+                <span>></span>
+                <a href="#">Complementos</a>
+            </nav>
+
+            <article class="center flexbox">
+                <h2>
+                    Complementos
+                </h2>
+                <fieldset>
+                    <select name="filtro" id="filtro">
+                        <option value="1">Recomendaciones</option>
+                        <option value="2">Menor Precio</option>
+                        <option value="3">Mayor Precio</option>
+                    </select>
+                </fieldset>
+            </article>
+
+            <div class="center grid02">
+
+            <article>
+                <figure>
+                    <img src="img/tienda/tienda_01.jpg" alt="taza amarilla">
+                </figure>
+
+                <h3>TAZA GOLDEN</h3>
+                <p class="flexbox">
+                    <a href="#">$550</a>
+                    <a href="#"><img src="img/icons/icon_star.svg" alt="estrella de favoritos"></a>
+                </p>
+            </article>
+
+            <article>
+                <figure>
+                    <img src="img/tienda/tienda_02.jpg" alt="taza sin asa gris">
+                </figure>
+
+                <h3>TAZA GRAFITO</h3>
+                <p class="flexbox">
+                    <a href="#">$500</a>
+                    <a href="#"><img src="img/icons/icon_star.svg" alt="estrella de favoritos"></a>
+                </p>
+            </article>
+
+            <article>
+                <figure>
+                    <img src="img/tienda/tienda_03.jpg" alt="taza hexagonal amarilla y blanca">
+                </figure>
+
+                <h3>TAZA HEXAGONAL</h3>
+                <p class="flexbox">
+                    <a href="#">$600</a>
+                    <a href="#"><img src="img/icons/icon_star.svg" alt="estrella de favoritos"></a>
+                </p>
+            </article>
+
+            <article>
+                <figure>
+                    <img src="img/tienda/tienda_04.jpg" alt="set dripper y jarra vintage">
+                </figure>
+
+                <h3>SET VINTAGE</h3>
+                <p class="flexbox">
+                    <a href="#">$3.500</a>
+                    <a href="#"><img src="img/icons/icon_star.svg" alt="estrella de favoritos"></a>
+                </p>
+            </article>
+
+            <article>
+                <figure>
+                    <img src="img/tienda/tienda_05.jpg" alt="set dripper y jarra clever">
+                </figure>
+
+                <h3>SET CLEVER</h3>
+                <p class="flexbox">
+                    <a href="#">$2.800</a>
+                    <a href="#"><img src="img/icons/icon_star.svg" alt="estrella de favoritos"></a>
+                </p>
+            </article>
+
+            <article>
+                <figure>
+                    <img src="img/tienda/tienda_06.jpg" alt="cafetera aluminio">
+                </figure>
+
+                <h3>CAFETERA ALUMINIO</h3>
+                <p class="flexbox">
+                    <a href="#">$1.060</a>
+                    <a href="#"><img src="img/icons/icon_star.svg" alt="estrella de favoritos"></a>
+                </p>
+            </article>
+
+            <article>
+                <figure>
+                    <img src="img/tienda/tienda_07.jpg" alt="prensa francesa">
+                </figure>
+
+                <h3>PRENSA FRANCESA</h3>
+                <p class="flexbox">
+                    <a href="#">$1.500</a>
+                    <a href="#"><img src="img/icons/icon_star.svg" alt="estrella de favoritos"></a>
+                </p>
+            </article>
+
+            </div>
+
+            <div id="filter">
+                <form method="post" action="procesar.php">
+
+                    <div class="flexbox">
+                        <h3>Precio</h3>
+                        <span>-</span>
+                    </div>
+                    <fieldset class="precios flexbox">
+
+                        <label for="precio01">
+                            <input type="radio" name="precio01" value="precio01" id="precio01">$0 a $1.000
+                        </label>
+                        
+                        <label for="precio02">
+                            <input type="radio" name="precio02" value="precio02" id="precio02">$1.000 a $2.500
+                        </label>
+
+                        <label for="precio03">
+                            <input type="radio" name="precio03" value="precio03" id="precio03">
+                        $2.500 o más
+                        </label>
+
+                    </fieldset>
+    
+                    <div class="flexbox">
+                        <h3>Categoría</h3>
+                        <span>-</span>
+                    </div>
+                    <fieldset class="categoria flexbox">
+
+                        <label for="tazas">
+                            <input type="checkbox" name="tazas" id="tazas">tazas
+                        </label>
+                        
+                        <label for="prensas">
+                            <input type="checkbox" name="prensas" id="prensas">prensas
+                        </label>
+                        
+                        <label for="drippers">
+                            <input type="checkbox" name="drippers" id="drippers">drippers
+                        </label>
+                        
+                        <label for="sets">
+                            <input type="checkbox" name="sets" id="sets">sets
+                        </label>
+                        
+                        <label for="filtros">
+                            <input type="checkbox" name="filtros" id="filtros">filtros
+                        </label>
+                        
+                        <label for="varios">
+                            <input type="checkbox" name="varios" id="varios">varios
+                        </label>
+
+                    </fieldset>
+                </form>
+    
+                <div class="flexbox">
+                    <h3>Marca</h3>
+                    <span>+</span>
+                </div>
+    
+                <a href="#" class="button2">FILTRAR</a>
+            </div> 
+        </section>
+
+        <nav id="pages" class="center flexbox">
+            <div class="flexbox">
+                <a href="#" class="flexbox">01</a>
+            </div>
+            <div class="flexbox pagina">
+                <a href="#" class="flexbox">02</a>
+            </div>
+            <div class="flexbox">
+                <a href="#" class="flexbox">03</a>
+            </div>
+        </nav>
+
+    </main>
+
+    <footer id="footer" class="flexbox">
+        <div class="center foot01 flexbox">
+
+            <figure class="flexbox">
+                <img src="img/icons/sandalo_white.svg" alt="logo de la empresa">
+            </figure>
+
+            <div class="contacto flexbox">
+                <h3>CONTACTO</h3>
+                <ul>
+                    <li>info@sandalo.com.uy</li>
+                    <li>T: 2435 6924</li>
+                    <li><a href="#">Politica de Privacidad</a></li>
+                </ul>
+            </div>
+
+            <div class="horarios flexbox">
+                <h3>HORARIOS</h3>
+                <div>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>L a V</th>
+                            <td>10:00 a 19:00</td>
+                        </tr>
+                        <tr>
+                            <th>Sáb</th>
+                            <td>10:00 a 13:00</td>
+                        </tr>
+                        <tr>
+                            <th>Dom</th>
+                            <td>cerrado</td>
+                        </tr>
+                    </tbody>
+                </table>
+                </div>
+            </div>
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d5502.758435758228!2d-56.1455619541183!3d-34.907459785385754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2suy!4v1667020352629!5m2!1ses-419!2suy" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </div>
+
+        <div class="flexbox redes">
+            <div class="flexbox">
+                <p>SEGUINOS</p>
+
+                <a href="https://www.facebook.com/" class="flexbox" target="blank"><img src="img/icons/social_facebook.svg" alt="logo facebook"></a>
+
+                <a href="https://www.instagram.com/" class="flexbox" target="blank"><img src="img/icons/social_instagram.svg" alt="logo instagram"></a>
+
+                <a href="https://open.spotify.com/playlist/5jFPcocdNTyWxLcgtjTNV0?si=55338f43018b48df" class="flexbox" target="blank"><img src="img/icons/social_spotify.svg" alt="logo spotify"></a>
+            </div>
+
+            <p class="flexbox">THE RUFUS PROJECT</p>
+        </div>
+
+        <a href="#" id="help">
+            <img src="img/icons/icon_interogacion.svg" alt="boton de ayuda">
+        </a>        
+    </footer> 
+
+    <a href="#" id="chat">
+        <img src="img/icons/icon_chat.svg" alt="chat de atencion al cliente">
+    </a>
+</body>
+</html>
